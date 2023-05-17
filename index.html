@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ánimo para el examen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ff6f61;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+.image-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+        button {
+            font-size: 2rem;
+            padding: 1rem;
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e55b4d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ánimo para el examen</h1>
+        <p>Hola amigo/a, estoy contigo en este momento. Sé que puedes lograrlo.</p>
+        <div class="image-container">
+            <img src="https://i.imgflip.com/7m1sty.jpg" alt="Imagen de ánimo">
+        </div>
+        <button onclick="mostrarMensaje()">Ver mensaje de ánimo</button>
+    </div>
+    <script>
+        function mostrarMensaje() {
+            var mensajes = [
+		    "ERES LO MAAAAAAAXIMOOOOOOOOOOOO <3",
+                "ERES LO MAAAAAAAXIMOOOOOOOOOOOO <3",
+                "ERES LO MAAAAAAAXIMOOOOOOOOOOOO <3",
+                "ERES LO MAAAAAAAXIMOOOOOOOOOOOO <3",
+                "ERES LO MAAAAAAAXIMOOOOOOOOOOOO <3",
+                "ERES LO MAAAAAAAXIMOOOOOOOOOOOO <3"
+            ];
+            var indice = Math.floor(Math.random() * mensajes.length);
+            alert(mensajes[indice]);
+        }
+    </script>
+</body>
+</html>
